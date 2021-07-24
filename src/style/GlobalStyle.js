@@ -30,6 +30,7 @@ const GlobalStyles = createGlobalStyle`
   html{
     font-size: 10px;
     font-family: 'Manrope', sans-serif;
+    
   }
 
   body {
@@ -58,7 +59,7 @@ const GlobalStyles = createGlobalStyle`
     outline: none
   }
   .container {
-    max-width: 1440px;
+   width: calc(100% / 3);
     /* width: 90%; */
     margin: 0 auto;
   }
