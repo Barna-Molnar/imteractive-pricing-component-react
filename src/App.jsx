@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import BackgroundImg from './images/bg-pattern.svg';
 import Title from './components/Title';
+import PricingComponent from './components/PricingComponent';
+
 const AppStlyes = styled.div`
   background-color: var(--main-background);
   width: 100vw;
@@ -10,6 +12,10 @@ const AppStlyes = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  .container {
+    width: 400px;
+    margin: 0 auto;
+  }
 `;
 
 function App() {
@@ -17,6 +23,7 @@ function App() {
     <AppStlyes>
       <div className="container">
         <Title />
+        <PricingComponent />
       </div>
     </AppStlyes>
   );

@@ -9,7 +9,6 @@ const TitleStyles = styled.div`
   justify-content: center;
   align-items: center;
   padding: 4rem 4rem;
-  border: solid black 1px;
   position: relative;
   z-index: 0;
   img {

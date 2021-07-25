@@ -58,11 +58,7 @@ const GlobalStyles = createGlobalStyle`
   button{
     outline: none
   }
-  .container {
-   width: calc(100% / 3);
-    /* width: 90%; */
-    margin: 0 auto;
-  }
+
 /* Smooth Scroll  */
   [data-scrollbar] {
     height: 100vh;
