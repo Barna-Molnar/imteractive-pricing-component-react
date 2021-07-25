@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
 
     --component-background: hsl(0, 0%, 100%);
     --main-background: hsl(230, 100%, 99%);
-    --color-empty-slider-bar: hsl(224, 65%, 95%)
+    --color-empty-slider-bar: hsl(224, 65%, 95%);
     --toggle-background: hsl(223, 50%, 87%);
     --grayish-blue-text: hsl(225, 20%, 60%);
     --dark-blue: hsl(227, 35%, 25%);

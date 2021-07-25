@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Footer from './Footer';
+import ToggleButton from './ToggleButton';
 
 const PricingComponentStyles = styled.div`
   padding: 3rem 3rem;
@@ -33,20 +35,13 @@ export default function PricingComponent() {
           /month
         </p>
       </div>
-      <div className="slider"></div>
+
       <div className="payment">
         <p className="payment--type">Monthly Billing</p>
-
+        <ToggleButton />
         <p className="payment--type">Yearly Billing</p>
       </div>
-      <div className="footer">
-        <ul>
-          <li>Unlimited websites</li>
-          <li>100% data ownership</li>
-          <li>Email reports</li>
-        </ul>
-        <button className="cta">Start my trial</button>
-      </div>
+      <Footer />
     </PricingComponentStyles>
   );
 }

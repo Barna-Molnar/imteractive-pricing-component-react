@@ -19,7 +19,7 @@ const ToggleButtonStyles = styled.div`
       font-size: 20px; /* 1 */
       height: 2rem;
       width: 4rem;
-      background: #bdb9a6;
+      background: var(--toggle-background);
       border-radius: 1em;
       /*   padding: 0.25rem; */
     }
@@ -45,12 +45,12 @@ const ToggleButtonStyles = styled.div`
 
 export default function ToggleButton() {
   return (
-    <div>
+    <ToggleButtonStyles>
       <div class="switch__container">
         <label class="switch">
           <input type="checkbox" /> <div></div>
         </label>
       </div>
-    </div>
+    </ToggleButtonStyles>
   );
 }
