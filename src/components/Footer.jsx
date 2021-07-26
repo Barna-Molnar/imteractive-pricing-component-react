@@ -2,11 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterStyles = styled.div`
+  padding: 2rem 4rem;
   height: calc(100% / 3);
   display: flex;
-
   justify-content: space-between;
-  padding: 2.5rem 0 0rem 1.5rem;
 
   ul li {
     color: var(--grayish-blue-text);
