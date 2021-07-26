@@ -6,9 +6,6 @@ import check from '../images/icon-check.svg';
 import Slider from './Slider';
 
 const PricingComponentStyles = styled.div`
-  img {
-    width: 50px;
-  }
   background-color: var(--component-background);
   height: 300px;
   width: 400px;
@@ -21,15 +18,37 @@ const PricingComponentStyles = styled.div`
     .header {
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
       &__pageView {
         color: var(--grayish-blue-text);
         font-size: 12px;
         text-transform: uppercase;
       }
+      &__month {
+        display: flex;
+        align-items: center;
+        color: var(--grayish-blue-text);
+        font-size: 12px;
+        .cost {
+          color: var(--dark-blue);
+          font-size: 4rem;
+          margin-right: 1rem;
+        }
+      }
     }
     .payment {
-      //switch button
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      color: var(--grayish-blue-text);
+
+      &--discount {
+        padding: 2px 6px;
+        border-radius: 10px;
+        color: var(--discount-text);
+        background-color: var(--discount-background);
+      }
     }
   }
 `;
@@ -38,13 +57,11 @@ export default function PricingComponent() {
   const [sliderValue, setSliderValue] = useState(16);
   return (
     <PricingComponentStyles>
-      {/* <img src={IconSlider} alt="" /> */}
       <div className="container">
         <div className="header">
           <p className="header__pageView">100k Pageviews</p>
           <p className="header__month">
-            <span className="cost"> $ {sliderValue} </span>
-            /month
+            <span className="cost"> ${sliderValue} </span>/ month
           </p>
         </div>
         <Slider sliderValue={sliderValue} setSliderValue={setSliderValue} />
@@ -52,6 +69,7 @@ export default function PricingComponent() {
           <p className="payment--type">Monthly Billing</p>
           <ToggleButton />
           <p className="payment--type">Yearly Billing</p>
+          <p className="payment--discount">25% discount</p>
         </div>
       </div>
 

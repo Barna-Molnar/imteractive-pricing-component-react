@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import styled from 'styled-components';
 import IconSlider from '../images/icon-slider.svg';
 
@@ -11,7 +10,7 @@ const SliderStyles = styled.div`
       position: relative;
       -webkit-appearance: none;
       width: 100%;
-      height: 10px;
+      height: 8px;
       border-radius: 5px;
       background: var(--color-empty-slider-bar);
       outline: none;
@@ -24,10 +23,9 @@ const SliderStyles = styled.div`
       position: absolute;
       top: 0;
       left: 0;
-      height: 10px;
+      height: 8px;
       border-radius: 5px;
       width: ${(props) => (100 / 32) * props.sliderValue}%;
-      /* width: 50%; */
       background-color: var(--soft-cyan);
       z-index: -1;
     }
@@ -58,7 +56,7 @@ export default function Slider({ sliderValue, setSliderValue }) {
           min="1"
           max="32"
           defaultValue={sliderValue}
-          step="1"
+          step="0.01"
           className="slider"
           id="myRange"
           onChange={(e) => setSliderValue(e.target.value)}
