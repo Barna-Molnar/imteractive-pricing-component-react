@@ -45,9 +45,9 @@ const GlobalStyles = createGlobalStyle`
     justify-content: center;
     align-items: center;
   }
-  ul,li{
+  /* ul,li{
     list-style: none;
-  }
+  } */
   a{
     text-decoration: none;
   }

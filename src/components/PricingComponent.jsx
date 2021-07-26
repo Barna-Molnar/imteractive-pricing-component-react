@@ -2,9 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import Footer from './Footer';
 import ToggleButton from './ToggleButton';
+import check from '../images/icon-check.svg';
 
 const PricingComponentStyles = styled.div`
   padding: 3rem 3rem;
+  /* display: flex;
+  flex-direction: column; */
   background-color: var(--component-background);
   height: 300px;
   width: 400px;
@@ -22,6 +25,9 @@ const PricingComponentStyles = styled.div`
   }
   .payment {
     //switch button
+  }
+  img {
+    width: 100px;
   }
 `;
 
@@ -41,7 +47,8 @@ export default function PricingComponent() {
         <ToggleButton />
         <p className="payment--type">Yearly Billing</p>
       </div>
-      <Footer />
+
+      <Footer checkImg={check} />
     </PricingComponentStyles>
   );
 }
