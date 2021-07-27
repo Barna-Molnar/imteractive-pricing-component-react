@@ -11,6 +11,8 @@ const TitleStyles = styled.div`
   padding: 4rem 4rem;
   position: relative;
   z-index: 0;
+  margin-top: 12rem;
+  margin-bottom: 3rem;
   img {
     width: 120px;
     z-index: 1;

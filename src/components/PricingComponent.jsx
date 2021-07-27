@@ -12,6 +12,10 @@ const PricingComponentStyles = styled.div`
   box-shadow: 2px 0px 45px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   .container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 3rem 4rem;
     width: 100%;
     height: 66%;
     border-bottom: 1px solid var(--color-empty-slider-bar);
@@ -32,7 +36,8 @@ const PricingComponentStyles = styled.div`
         font-size: 12px;
         .cost {
           color: var(--dark-blue);
-          font-size: 4rem;
+          font-size: 3.3rem;
+          font-weight: 800;
           margin-right: 1rem;
         }
       }
@@ -51,10 +56,13 @@ const PricingComponentStyles = styled.div`
       }
     }
   }
+  .container > * {
+    margin-bottom: 2rem;
+  }
 `;
 
 export default function PricingComponent() {
-  const [sliderValue, setSliderValue] = useState(16);
+  const [sliderValue, setSliderValue] = useState((16).toFixed(2));
   return (
     <PricingComponentStyles>
       <div className="container">
