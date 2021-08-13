@@ -45,14 +45,18 @@ const PricingComponentStyles = styled.div`
     .payment {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: flex-end;
       color: var(--grayish-blue-text);
+      margin-top: 2rem;
+      font-size: 9px;
 
       &--discount {
         padding: 2px 6px;
         border-radius: 10px;
         color: var(--discount-text);
         background-color: var(--discount-background);
+        margin-right: 1rem;
+        margin-left: 1rem;
       }
     }
   }

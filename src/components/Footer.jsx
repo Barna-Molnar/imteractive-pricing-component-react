@@ -19,6 +19,8 @@ const FooterStyles = styled.div`
   }
   .cta {
     padding: 1rem 3.5rem;
+    font-weight: 800;
+    font-family: 'Manrope';
     font-size: 10px;
     align-self: center;
     outline: none;
@@ -26,6 +28,10 @@ const FooterStyles = styled.div`
     border-radius: 17px;
     background-color: var(--dark-blue);
     color: var(--pale-blue-text);
+    transition: all 0.15s;
+  }
+  .cta:hover {
+    color: var(--white);
   }
 `;
 
@@ -37,7 +43,9 @@ export default function Footer({ checkImg }) {
         <li>100% data ownership</li>
         <li>Email reports</li>
       </ul>
-      <button className="cta">Start my trial</button>
+      <button className="cta">
+        <span> Start my trial</span>
+      </button>
     </FooterStyles>
   );
 }

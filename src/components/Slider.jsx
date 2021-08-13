@@ -44,6 +44,10 @@ const SliderStyles = styled.div`
       box-shadow: 0 15px 25px 5px hsla(174, 86%, 45%, 0.5);
       z-index: 0;
     }
+    .slider::-webkit-slider-thumb:hover {
+      background-color: red;
+      background-color: var(--dark-cyan-slider-hover);
+    }
   }
 `;
 
