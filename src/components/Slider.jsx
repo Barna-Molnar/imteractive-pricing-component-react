@@ -34,7 +34,7 @@ const SliderStyles = styled.div`
     .slider::-webkit-slider-thumb {
       -webkit-appearance: none;
       appearance: none;
-      width: 23px;
+      width: 24px;
       height: 24px;
       border: 0;
       padding: 1.5rem;
@@ -51,6 +51,14 @@ const SliderStyles = styled.div`
     }
   }
   @media only screen and (max-width: 768px) {
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 30px;
+      height: 30px;
+      border: 0;
+      padding: 2rem !important;
+    }
   }
 `;
 

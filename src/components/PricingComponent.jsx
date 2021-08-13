@@ -57,8 +57,7 @@ const PricingComponentStyles = styled.div`
         border-radius: 10px;
         color: var(--discount-text);
         background-color: var(--discount-background);
-        margin-right: 1rem;
-        margin-left: 1rem;
+        margin: 0 1rem;
       }
     }
   }
@@ -66,6 +65,32 @@ const PricingComponentStyles = styled.div`
     margin-bottom: 2rem;
   }
   @media only screen and (max-width: 768px) {
+    .container {
+      padding: 3rem 2rem;
+      .header {
+        flex-direction: column;
+        &__pageView {
+          font-size: 13px;
+        }
+
+        &__month {
+          order: 3;
+          margin-top: 4rem;
+          font-size: 15px;
+          font-weight: 600;
+        }
+      } // header end
+      .payment {
+        font-size: 12px;
+
+        &--discount {
+          margin: 0 0 0 0.5rem;
+          span {
+            display: none;
+          }
+        }
+      }
+    }
   }
 `;
 
@@ -85,7 +110,9 @@ export default function PricingComponent() {
           <p className="payment--type">Monthly Billing</p>
           <ToggleButton />
           <p className="payment--type">Yearly Billing</p>
-          <p className="payment--discount">25% discount</p>
+          <p className="payment--discount">
+            -25% <span>discount</span>
+          </p>
         </div>
       </div>
 

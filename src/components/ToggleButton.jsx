@@ -35,6 +35,22 @@ const ToggleButtonStyles = styled.div`
   input:checked[type='checkbox']:before {
     left: 1.7rem;
   }
+
+  @media only screen and (max-width: 768px) {
+    input[type='checkbox'] {
+      width: 4rem;
+      height: 2.2rem;
+      border-radius: 12px;
+    }
+    input[type='checkbox']:before {
+      width: 14px;
+      height: 14px;
+      top: 4px;
+    }
+    input:checked[type='checkbox']:before {
+      left: 2.2rem;
+    }
+  }
 `;
 
 export default function ToggleButton() {

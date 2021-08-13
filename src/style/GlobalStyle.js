@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
     --soft-cyan:hsl(174, 77%, 80%);
     --soft-cyan:hsl(174, 77%, 80%);
     --dark-cyan-slider: hsl(174, 86%, 45%);
-    --dark-cyan-slider-hover: hsl(169, 75%, 45%);
+    --dark-cyan-slider-hover: hsl(159, 75%, 45%);
     --discount-background: hsl(14, 92%, 95%);
     --discount-text: hsl(15, 100%, 70%);
     --pale-blue-text: hsl(226, 100%, 87%);
