@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import IconSlider from '../images/icon-slider.svg';
 
 const SliderStyles = styled.div`
+  margin-top: 3rem;
   width: 100%;
   .slidecontainer {
     width: 100%;
@@ -10,7 +11,7 @@ const SliderStyles = styled.div`
       position: relative;
       -webkit-appearance: none;
       width: 100%;
-      height: 8px;
+      height: 7px;
       border-radius: 5px;
       background: var(--color-empty-slider-bar);
       outline: none;
@@ -23,7 +24,7 @@ const SliderStyles = styled.div`
       position: absolute;
       top: 0;
       left: 0;
-      height: 8px;
+      height: 7px;
       border-radius: 5px;
       width: ${(props) => (100 / 32) * props.sliderValue}%;
       background-color: var(--soft-cyan);

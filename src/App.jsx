@@ -11,17 +11,17 @@ const AppStlyes = styled.div`
   background: url(${BackgroundImg}) no-repeat;
   display: flex;
   justify-content: center;
-  align-items: center;
-  .container {
+  align-items: flex-start;
+  .container-outer {
     width: 400px;
-    margin: 0 auto;
+    margin: 5rem auto;
   }
 `;
 
 function App() {
   return (
     <AppStlyes>
-      <div className="container">
+      <div className="container-outer">
         <Title />
         <PricingComponent />
       </div>

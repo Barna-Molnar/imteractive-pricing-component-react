@@ -28,7 +28,7 @@ const FooterStyles = styled.div`
     border-radius: 17px;
     background-color: var(--dark-blue);
     color: var(--pale-blue-text);
-    transition: all 0.15s;
+    transition: all 0.3s;
   }
   .cta:hover {
     color: var(--white);

@@ -21,12 +21,14 @@ const PricingComponentStyles = styled.div`
     border-bottom: 1px solid var(--color-empty-slider-bar);
     .header {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
 
       &__pageView {
         color: var(--grayish-blue-text);
-        font-size: 12px;
+        font-size: 11px;
+        letter-spacing: 1px;
         text-transform: uppercase;
       }
       &__month {
@@ -36,7 +38,7 @@ const PricingComponentStyles = styled.div`
         font-size: 12px;
         .cost {
           color: var(--dark-blue);
-          font-size: 3.3rem;
+          font-size: 3rem;
           font-weight: 800;
           margin-right: 1rem;
         }
@@ -75,8 +77,8 @@ export default function PricingComponent() {
           <p className="header__month">
             <span className="cost"> ${sliderValue} </span>/ month
           </p>
+          <Slider sliderValue={sliderValue} setSliderValue={setSliderValue} />
         </div>
-        <Slider sliderValue={sliderValue} setSliderValue={setSliderValue} />
         <div className="payment">
           <p className="payment--type">Monthly Billing</p>
           <ToggleButton />
