@@ -50,6 +50,8 @@ const SliderStyles = styled.div`
       background-color: var(--dark-cyan-slider-hover);
     }
   }
+  @media only screen and (max-width: 768px) {
+  }
 `;
 
 export default function Slider({ sliderValue, setSliderValue }) {

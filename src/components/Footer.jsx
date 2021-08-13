@@ -33,6 +33,23 @@ const FooterStyles = styled.div`
   .cta:hover {
     color: var(--white);
   }
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+  }
+  ul li {
+    margin-bottom: 1rem !important;
+  }
+  .cta {
+    margin: 2.5rem 0;
+    padding: 1.2rem 5rem;
+    font-weight: 800;
+    font-family: 'Manrope';
+    font-size: 12px;
+    border-radius: 25px;
+  }
 `;
 
 export default function Footer({ checkImg }) {

@@ -13,8 +13,15 @@ const AppStlyes = styled.div`
   justify-content: center;
   align-items: flex-start;
   .container-outer {
-    width: 400px;
+    max-width: 400px;
     margin: 5rem auto;
+  }
+  @media only screen and (max-width: 768px) {
+    .container-outer {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 0 3rem;
+    }
   }
 `;
 

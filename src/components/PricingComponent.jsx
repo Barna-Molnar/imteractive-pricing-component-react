@@ -7,8 +7,8 @@ import Slider from './Slider';
 
 const PricingComponentStyles = styled.div`
   background-color: var(--component-background);
-  height: 300px;
-  width: 400px;
+  min-height: 300px;
+  max-width: 400px;
   box-shadow: 2px 0px 45px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   .container {
@@ -64,6 +64,8 @@ const PricingComponentStyles = styled.div`
   }
   .container > * {
     margin-bottom: 2rem;
+  }
+  @media only screen and (max-width: 768px) {
   }
 `;
 

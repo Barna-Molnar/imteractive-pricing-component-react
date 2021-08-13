@@ -24,10 +24,27 @@ const TitleStyles = styled.div`
     margin-bottom: 0.5rem;
     z-index: 2;
   }
-  p {
-    font-size: 12px;
-    color: var(--grayish-blue-text);
-    z-index: 2;
+  .para {
+    display: flex;
+    p {
+      font-size: 12px;
+      color: var(--grayish-blue-text);
+      z-index: 2;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    margin-top: 6rem;
+    text-align: center;
+    padding: 4rem 0rem;
+    h1 {
+      font-size: 2rem;
+    }
+    .para {
+      flex-direction: column;
+    }
+    img {
+      width: 140px;
+    }
   }
 `;
 
@@ -36,7 +53,10 @@ export default function Title() {
     <TitleStyles>
       <img src={BackPattern} alt="" />
       <h1>Simple, traffic-based pricing</h1>
-      <p>Sign-up for our 30-day trial. No credit card required. </p>
+      <div className="para">
+        <p>Sign-up for our 30-day trial.</p>
+        <p>No credit card required.</p>
+      </div>
     </TitleStyles>
   );
 }
