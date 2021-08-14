@@ -18,8 +18,8 @@ const FooterStyles = styled.div`
     content: url(${(props) => props.checkImg});
   }
   .cta {
-    padding: 1rem 3.5rem;
-    font-weight: 800;
+    padding: 0.8rem 3.5rem;
+    font-weight: 600;
     font-family: 'Manrope';
     font-size: 10px;
     align-self: center;
@@ -38,17 +38,17 @@ const FooterStyles = styled.div`
     align-items: center;
     text-align: center;
     font-size: 12px;
-  }
-  ul li {
-    margin-bottom: 1rem !important;
-  }
-  .cta {
-    margin: 2.5rem 0;
-    padding: 1.2rem 5rem;
-    font-weight: 800;
-    font-family: 'Manrope';
-    font-size: 12px;
-    border-radius: 25px;
+    ul li {
+      margin-bottom: 1rem !important;
+    }
+    .cta {
+      margin: 2.5rem 0;
+      padding: 1.2rem 5rem;
+      font-weight: 800;
+      font-family: 'Manrope';
+      font-size: 12px;
+      border-radius: 25px;
+    }
   }
 `;
 
