@@ -53,10 +53,10 @@ const ToggleButtonStyles = styled.div`
   }
 `;
 
-export default function ToggleButton() {
+export default function ToggleButton({ setDiscount, discount }) {
   return (
     <ToggleButtonStyles>
-      <input type="checkbox" />
+      <input type="checkbox" onClick={() => setDiscount(!discount)} />
     </ToggleButtonStyles>
   );
 }

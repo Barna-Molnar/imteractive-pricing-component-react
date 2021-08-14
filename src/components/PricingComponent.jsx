@@ -4,6 +4,7 @@ import Footer from './Footer';
 import ToggleButton from './ToggleButton';
 import check from '../images/icon-check.svg';
 import Slider from './Slider';
+import Header from '../Header';
 
 const PricingComponentStyles = styled.div`
   background-color: var(--component-background);
@@ -95,20 +96,16 @@ const PricingComponentStyles = styled.div`
 `;
 
 export default function PricingComponent() {
-  const [sliderValue, setSliderValue] = useState((16).toFixed(2));
+  const [discount, setDiscount] = useState(false);
+
+  console.log('rendered');
   return (
     <PricingComponentStyles>
       <div className="container">
-        <div className="header">
-          <p className="header__pageView">100k Pageviews</p>
-          <p className="header__month">
-            <span className="cost"> ${sliderValue} </span>/ month
-          </p>
-          <Slider sliderValue={sliderValue} setSliderValue={setSliderValue} />
-        </div>
+        <Header discount={discount} />
         <div className="payment">
           <p className="payment--type">Monthly Billing</p>
-          <ToggleButton />
+          <ToggleButton setDiscount={setDiscount} discount={discount} />
           <p className="payment--type">Yearly Billing</p>
           <p className="payment--discount">
             -25% <span>discount</span>
