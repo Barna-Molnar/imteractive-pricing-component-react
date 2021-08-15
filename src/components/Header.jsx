@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Slider from './components/Slider';
+import Slider from './Slider';
 
 export default function Header({ discount }) {
   const [sliderValue, setSliderValue] = useState((16).toFixed(2));

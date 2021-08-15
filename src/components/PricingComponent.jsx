@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import Footer from './Footer';
 import ToggleButton from './ToggleButton';
 import check from '../images/icon-check.svg';
-import Slider from './Slider';
-import Header from '../Header';
+import Header from './Header';
 
 const PricingComponentStyles = styled.div`
   background-color: var(--component-background);

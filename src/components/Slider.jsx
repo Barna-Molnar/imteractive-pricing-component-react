@@ -34,6 +34,7 @@ const SliderStyles = styled.div`
       -webkit-transition: 0.2s;
       transition: opacity 0.2s;
     }
+
     .slider::before {
       content: '';
       position: absolute;

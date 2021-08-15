@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import BackPattern from '../images/pattern-circles.svg';
 
-const TitleStyles = styled.div`
+export const TitleStyles = styled.div`
   /* background: url(${BackPattern}) no-repeat center; */
   display: flex;
   flex-direction: column;
